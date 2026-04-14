@@ -5,7 +5,7 @@ from langchain_mistralai import ChatMistralAI
 from langchain.messages import AIMessage, SystemMessage, HumanMessage
 # Load API keys from .env
 load_dotenv()
-
+api_key = st.secrets["MISTRAL_API_KEY"]
 # --- Page Setup ---
 st.set_page_config(page_title="Intelligent Bot", page_icon="🧠")
 st.title("🧠 Intelligent Chat")
