@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from langchain_mistralai import ChatMistralAI
 from langchain.messages import AIMessage, SystemMessage, HumanMessage
-
+api_key = st.secrets["MISTRAL_API_KEY"]
 # Load API keys from .env
 load_dotenv()
 
